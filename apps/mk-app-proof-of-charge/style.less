@@ -1,0 +1,274 @@
+.mk-app-proof-of-charge {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    h1, h2, h3, h4, h5, h6 {
+        color: #666666;
+        font-weight: 500;
+    }
+    .mkicon {
+        font-size: 22px;
+    }
+    &-iconbutton {
+        padding: 0 4px !important;
+    }
+    &-cell-left {
+        padding-left: 8px;
+        justify-content: flex-start;
+    }
+    &-cell-right {
+        padding-right: 8px;
+        justify-content: flex-end;
+    }
+    &-cell {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &>div {
+            width: 100%;
+            height: 100%;
+            input {
+                height: 100%;
+            }
+        }
+        .ant-select-selection {
+            height: 100%
+        }
+        .ant-select-selection__rendered {
+            height: 100%
+        }
+        .ant-select-selection-selected-value {
+            line-height: 40px;
+        }
+    }
+    &-cell-disabled {
+        cursor: not-allowed;
+    }
+    .ant-tabs-bar {
+        margin-bottom: 0px;
+    }
+    .mk-datagrid-cellContent label {
+        font-size:15px;
+    }
+    .mk-datagrid .public_fixedDataTableCell_main {
+        border-color: #E9E9E9;
+        border-width: 1px;
+    }
+    .mk-datagrid .fixedDataTableLayout_main {
+        border-color: #E9E9E9;
+    }
+    .mk-datagrid .public_fixedDataTable_header, .mk-datagrid .public_fixedDataTable_header .public_fixedDataTableCell_main {
+        background-image: linear-gradient(#F6F7F8, #F6F7F8);
+        color:#333333;
+    }
+    .mk-datagrid border {
+        border-color: #E9E9E9;
+    }
+    .fixedDataTableLayout_footer .public_fixedDataTableCell_main {
+        border-top-width: 0px;
+    }
+    &-money-cell-header {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        label {
+            font-size: 15px;
+        }
+        &-top {
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            color: #333333;
+        }
+        &-bottom {
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            &>div {
+                flex: 1;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                border-top: #eee 1px solid;
+                border-right: #eee 1px solid;
+            }
+            &>div:nth-child(3) {
+                border-right-color: #A5D9F6
+            }
+            &>div:nth-child(6) {
+                border-right-color: #A5D9F6
+            }
+            &>div:nth-child(9) {
+                border-right-color: #EEB9B9
+            }
+            &>div:last-child {
+                border-right-width: 0px;
+            }
+        }
+    }
+    &-money-cell {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        &>div {
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            border-top: #eee 1px solid;
+            border-right: #eee 1px solid;
+            font-weight: bold;
+            font-size: large;
+        }
+        &>div:nth-child(3) {
+            border-right-color: #A5D9F6
+        }
+        &>div:nth-child(6) {
+            border-right-color: #A5D9F6
+        }
+        &>div:nth-child(9) {
+            border-right-color: #EEB9B9
+        }
+        &>div:last-child {
+            border-right-width: 0px;
+        }
+    }
+    //.public_fixedDataTable_footer .fixedDataTableCellLayout_wrap3:nth-child(1) {
+        //border-right-width: 0px;
+        //font-weight: bold;
+        //font-size: large;
+        //line-height: 47px;
+    //}
+    .public_fixedDataTable_footer .public_fixedDataTableCell_main:nth-child(1) {
+        border-right-width: 0px;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 47px;
+    }
+    &-header {
+        flex-direction: row;
+        height: 50px;
+        flex: 0 0 50px;
+        overflow: hidden;
+        &-left {
+            flex-direction: row;
+            align-items: center;
+            &>.mk-btn {
+                margin-left: 10px;
+            }
+        }
+        &-right {
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            overflow: hidden;
+            .mk-btn {
+                margin-left: 10px
+            }
+        }
+    }
+    &-title {
+        flex: 0 0 auto;
+        flex-direction: row;
+        justify-content: space-between;
+        &-left {
+            flex: 0 0 200px;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 10px;
+            &-tag {
+                border: 1px solid red;
+                padding: 4px 8px;
+                font-style: italic;
+                font-weight: bold;
+                color: red;
+            }
+        }
+        &-right {
+            flex: 0 0 200px;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            padding-right: 10px;
+        }
+    }
+    &-form-header {
+        flex: 0 0 auto;
+        flex-direction: row;
+        padding: 10px;
+        &-code {
+            flex-direction: row;
+            align-items: center;
+            flex: 0 0 250px;
+            .mk-input {
+                width: 60px;
+                margin: 0px 4px;
+            }
+        }
+        &-date {
+            flex-direction: row;
+            align-items: center;
+            flex: 1;
+            .mk-datepicker {
+                margin: 0px 4px;
+            }
+        }
+        &-attachment {
+            flex-direction: row;
+            align-items: center;
+            flex: 0 0 300px;
+            justify-content: flex-end;
+            .mk-input-number {
+                width: 60px;
+                margin: 0px 4px;
+            }
+            a {
+                margin: 0px 0px 0px 20px;
+            }
+        }
+    }
+    &-form-details {
+        flex: 1;
+        &-captionOfAccount {
+            .ant-select-search--inline {
+                width: 85%
+            }
+            a {
+                height: 100%;
+                line-height: 45px;
+            }
+        }
+    }
+    &-footer {
+        padding: 10px;
+        flex: 0 0 auto;
+        flex-direction: row;
+        &-left {
+            flex-direction: row;
+            align-items: center;
+            &>.mk-btn {
+                margin-left: 10px;
+            }
+        }
+        &-right {
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            overflow: hidden;
+            .mk-btn {
+                margin-left: 10px
+            }
+        }
+    }
+}
